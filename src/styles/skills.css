@@ -1,0 +1,85 @@
+@keyframes breath {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+    transform: scale(120%);
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+@keyframes openAnime {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.skillsMain {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.skills {
+  margin-top: 1rem;
+  padding: 1rem;
+  overflow: visible;
+}
+
+.skillsCard {
+  background-color: rgb(37, 37, 37);
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.headerSkills {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 30px;
+  color: #6ea3e0;
+  gap: 1rem;
+  cursor: pointer;
+}
+.headerSkills span {
+  cursor: pointer;
+}
+
+.skillSection {
+  margin-top: 0.5rem;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  transition: all 0.3s;
+  font-weight: 300;
+}
+
+.skill {
+  border-radius: 5px;
+  background-color: rgb(59, 59, 59);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  padding: 0.5rem;
+}
+.skill span {
+  width: fit-content;
+  font-weight: 500;
+  color: rgb(233, 233, 233);
+  font-size: 14px;
+}
+
+.skillIcon {
+  width: 24px;
+  height: 24px;
+}
+
+/*# sourceMappingURL=skills.css.map */

@@ -1,0 +1,89 @@
+@import '../styles/variables/Variables.scss';
+
+@mixin flexEnd($v: flex-end, $h: center) {
+    display: flex;
+    align-items: $v;
+    justify-content: $h;
+}
+@keyframes breath {
+    0%{
+        opacity: 0.2;
+    }
+    50%{
+        opacity: 1;
+        transform: scale(120%);
+    }
+    100%{
+        opacity: 0.2;
+    }
+}
+
+@keyframes openAnime {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.skillsMain{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    // width: fit-content;
+    // flex-wrap: wrap;
+    
+}
+.skills{
+    margin-top: 1rem;
+    padding: 1rem;
+    // border-top: 2px solid $textColor1;
+    // border-bottom: 2px solid $textColor1;
+    overflow: visible;
+}
+.skillsCard{
+    background-color: $secondaryColor;
+    padding: .5rem;
+    border-radius: 5px;
+}
+.headerSkills{
+    @include flexEnd($v: center, $h: space-between);
+    // color: $textColor1;
+    font-size: 30px;
+    color: $textColor2;
+    gap: 1rem;
+    // font-size: 24px;
+    cursor: pointer;
+    span{
+        cursor: pointer;
+    }
+}
+// .headerSkills:hover{
+//     color: white;
+// }
+.skillSection{
+    margin-top: .5rem;
+    width: 100%;
+    @include flexEnd($v: flex-start, $h: flex-start);
+    gap: .5rem;
+    flex-wrap: wrap;
+    transition: all .3s;
+    font-weight: 300;
+}
+.skill{
+    border-radius: 5px;
+    background-color: $headerColor2;
+    @include flexEnd($v: center, $h: flex-start);
+    gap: 1rem;
+    padding: .5rem;
+    span{
+        width: fit-content;
+        font-weight: 500;
+        color: $textColor1;
+        font-size: 14px;
+    }
+}
+.skillIcon{
+    width: 24px;
+    height: 24px;
+}
